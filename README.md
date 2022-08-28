@@ -39,7 +39,7 @@ Thanks.
 
 5/ Bật trình duyệt lên (tùy vào trình duyệt bạn thường sử dụng), vào Thiết lập của trình duyệt, tùy vào trình duyệt mà bạn đang dùng, có các cách sau:
   + Nếu bạn dùng Google Chrome: gõ vào thanh địa chỉ: chrome://settings/ . Tìm đến mục "Khi khởi động" (On startup) >> "Mở một trang cụ thể hoặc tập hợp các trang" (Open a specific page or set of pages) >> Khi một hộp thoại nhập liệu nhỏ hiện ra, thì qua bước kế tiếp
-  + Nếu bạn dùng Microsoft Edge (phiên bản mới): gõ vào thanh địa chỉ: edge://settings/ . Tìm đến mục "Khi khởi động" (On startup) >> "Mở một trang cụ thể hoặc tập hợp các trang" (Open a specific page or set of pages) >> Khi một hộp thoại nhập liệu nhỏ hiện ra, thì qua bước kế tiếp
+  + Nếu bạn dùng Microsoft Edge (phiên bản mới): gõ vào thanh địa chỉ: edge://settings/startHomeNTP . Tìm đến mục "Khi Edge khởi động" (When Edge starts) >> "Mở các trang này:" (Open these pages:) >> Khi một hộp thoại nhập liệu nhỏ hiện ra, thì qua bước kế tiếp
   + Nếu bạn dùng Mozilla Firefox (p.bản Nightly/p.bản Cơ bản): gõ vào thanh địa chỉ: about:preferences#home . Tìm đến mục "Trang chủ và Cửa sổ mới" (Homepage and new windows) >> chọn "URL tùy chỉnh.." (Custom URLs..) >> >> Khi một hộp thoại nhập liệu nhỏ hiện ra, thì qua bước kế tiếp
   + Nếu bạn dùng các trình duyệt khác, thì kệ mịa bạn, mình đ' biết, gõ mệt vcl (hoặc bạn có thể google cách vào settings để đặt homepage & trang khởi động cho trình duyệt của bạn)
 
