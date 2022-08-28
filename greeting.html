@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" type="text/css" href="images-msedge-startpage/css-msedge-startpage/style.css" >
+    <style> /* changed at 19:55 04-Aug-2022 (L) */
+        @keyframes mountains_behind{
+            0%   {left:-200px; top:400px;}
+            25% {left: -125px; top: 250px;}
+            50%  { left:0; top:0px; filter: blur(0px);}
+            100%  { left:0; top:0px; filter: blur(2.5px);}
+        }
+        @keyframes moon{
+            0%   {left:0px; top:-200px;opacity: 0;}
+            60% {left:0px; top:-200px;opacity: 0;}
+            100%  { left:0; top:0px;}
+        }
+
+        @keyframes mountains_front{
+            0%   {opacity: 0; top: 20px}
+            80%  { opacity: 1; top: 0px; filter: brightness(100%);}
+            100%  { opacity: 1; top: 0px; filter: brightness(150%);}
+        }
+        @keyframes little-starters-pkm{
+            0%   {opacity: 0; }
+            25%   {opacity: 0; }
+            50%   {opacity: 0; }
+            75%   {opacity: 0; }
+            80%   {opacity: 0.5; }
+            100%  { opacity: 1; filter: brightness(80%);}
+        }
+        @keyframes atext{
+            0% {opacity: 0; }
+            25%   {opacity: 0; }
+            50%   {opacity: 0; }
+            75%   {opacity: 0; }
+            80%   {opacity: 0.5; }
+            100% {opacity: 1;}
+        }
+        @keyframes acontent{
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @keyframes h2_decor {
+            0% {opacity: 0;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style> <!--  changed at 19:55 04-Aug-2022 (U) -->
+    
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Quick access to:</a> 
+        <ul>
+            <li><a href="https://wwww.messenger.com">Messenger</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.github.com">Github</a></li>
+            <li><a href="https://teams.microsoft.com" class="active">Microsoft Teams</a></li>
+           
+            
+        </ul>
+       
+    </header>
+        <!-- <h1>Hello Screen</h1> <br> -->
+    <section>
+            <img src="images-msedge-startpage/stars.png" alt="" id="stars">
+            <img src="images-msedge-startpage/moon.png" alt="" id="moon">
+            <img src="images-msedge-startpage/mountains_behind.png" alt="" id="mountains_behind">
+            <h3 id="text">Welcome back to <i>Microsoft Edge </i>!</h3>
+            <script id="des">
+                let today = new Date();
+                let curHr = today.getHours();
+                let greetings;
+        // added from here 
+             
+               
+        // to here
+                if (curHr > 6 && curHr < 11) {
+                    greetings = "Good Morning, Tùng!";
+                } else if (curHr >= 11 && curHr < 18) {
+                    greetings = "Good Afternoon, Tùng!";
+                } else if(curHr >= 18 && curHr < 22){
+                    greetings = "Good Evening, Tùng!";
+                }
+                else {
+                    greetings = "Good Night, Tùng!";
+                }
+
+              //  if(true){
+               //     greetings = "Hello World, Tùng!";
+              //  }
+        
+                document.write("<h2>" + greetings + "</h2>");
+
+                // disable right-mouse
+                window.oncontextmenu = function(){
+                    alert('Uh! Some Pokémon don\'t really like your right mouse');
+                    return false;
+                }
+            </script>
+            <img src="images-msedge-startpage/mountains_front.png" alt="" id="mountains_front">    
+            <img src="images-msedge-startpage/little-pkm.png" alt="Kanto Starters" id="little-pkm">
+            <img src="images-msedge-startpage/little-starters-pkm.png" alt="Kanto Starters" id="little-starters-pkm">
+    </section>
+    
+    
+    
+</body>
+</html>
