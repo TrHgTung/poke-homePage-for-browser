@@ -1,6 +1,13 @@
 # poke-homePage-for-browser
 A colorful HTML/CSS design for you can set the home page (start page) of your browser (Firefox/Chromium browsers work well)
 
+Details:
+
+- A colorful page (HTML file), made with HTML/CSS and JS basically
+- For people who like Pokemon, and the cuteness
+- JS (JavaScript) give you a greeting based on the system time. Ex: time: 23:20 >> "Good Night, Admin!"
+- Short animations
+- Comparative with Chromnium and Firefox browser, or others but I've not tested them.
 
 Hello,
 
@@ -51,3 +58,11 @@ Thanks.
 
 
 Còn vẫn không biết nữa thì đm bạn :3
+
+Details:
+
+- A colorful page (HTML file), made with HTML/CSS and JS basically
+- For people who like Pokemon, and the cuteness
+- JS (JavaScript) give you a greeting based on the system time. Ex: time: 23:20 >> "Good Night, Admin!"
+- Short animations
+- Comparative with Chromnium and Firefox browser, or others but I've not tested them.
