@@ -54,13 +54,13 @@
 </head>
 <body>
     <header>
-        <a href="" class="logo">Quick access to:</a> 
+        <a href="#" class="logo" onclick="funct()">Quick access to:</a> 
         <ul>
             <li><a href="https://wwww.messenger.com">Messenger</a></li>
             <li><a href="https://www.facebook.com">Facebook</a></li>
             <li><a href="https://www.youtube.com">Youtube</a></li>
-            <li><a href="https://www.github.com">Github</a></li>
-            <li><a href="https://teams.microsoft.com" class="active">Microsoft Teams</a></li>
+            <li><a href="https://github.com/TrHgTung/poke-homePage-for-browser">Check newer</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ" class="active">P*rnHub</a></li>
            
             
         </ul>
@@ -76,39 +76,57 @@
                 let today = new Date();
                 let curHr = today.getHours();
                 let greetings;
-        // added from here 
-             
-               
-        // to here
+                var admin = "Admin";
+       
                 if (curHr > 6 && curHr < 11) {
-                    greetings = "Good Morning, Tùng!";
+                    greetings = "Good Morning, " + admin + "!";
                 } else if (curHr >= 11 && curHr < 18) {
-                    greetings = "Good Afternoon, Tùng!";
+                    greetings = "Good Afternoon, " + admin+ "!";
                 } else if(curHr >= 18 && curHr < 22){
-                    greetings = "Good Evening, Tùng!";
+                    greetings = "Good Evening, " + admin + "!";
                 }
                 else {
-                    greetings = "Good Night, Tùng!";
+                    greetings = "Good Night, " + admin + "!";
                 }
 
-              //  if(true){
-               //     greetings = "Hello World, Tùng!";
-              //  }
+                /* if(true){
+                    greetings = "Hello World, Tùng!";
+                }*/
         
                 document.write("<h2>" + greetings + "</h2>");
 
                 // disable right-mouse
                 window.oncontextmenu = function(){
-                    alert('Uh! Some Pokémon don\'t really like your right mouse');
+                    alert("Check for the newer version in https://github.com/TrHgTung/poke-homePage-for-browser");
                     return false;
                 }
+
+                function funct(){
+                    document.getElementsByClassName("logo").value = alert("You know what? Charmander and their evolutionary line is not a dragon :v ");
+                }
+
+               /* var WinNetwork = new ActiveXObject("WScript.Network");
+                console.log(WinNetwork.UserName); /* damn it! this shjt required ActiveX must be activated */
             </script>
             <img src="images-msedge-startpage/mountains_front.png" alt="" id="mountains_front">    
             <img src="images-msedge-startpage/little-pkm.png" alt="Kanto Starters" id="little-pkm">
             <img src="images-msedge-startpage/little-starters-pkm.png" alt="Kanto Starters" id="little-starters-pkm">
     </section>
     
-    
+    <!--
+        Image Source & Attribution
+
+        Source : https://www.freepik.com
+
+        Star vector created by upklyak
+        Link : https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm#page=1&query=Scene&position=38
+    -->
+
+    <!-- 
+        Damn, you know? I've tried to search how to get System Username to replace "admin" in the code,
+        but I cannot, so just keep it =))) Or you can open this file (greeting.html) with a Text Editor (like Notepad/ VS Code/ Sublime Text/..) to edit and change the variable admin (line 79) to the string name you want
+
+    -->
     
 </body>
 </html>
