@@ -45,7 +45,9 @@ Thanks.
 
 6/ Còn nhớ thư mục để giải nén các tập tin vào mà mình kêu bạn ghi nhớ địa chỉ của nó không (không phải thư mục chứa các tệp tải về (Downloads) đâu nha, là cái thư mục mà khi nãy bạn giải nén file ZIP ra nó á); sao chép cái địa chỉ của các thư mục đó (bằng cách copy địa chỉ thư mục trên thanh địa chỉ của cửa sổ Windows Explorer)
 
-7/ Xong quay lại trình duyệt dán đoạn địa chỉ đó vô cái hộp thoại rồi nhấn OK/Save/Lưu.. gì đó để thiết lập thôi
+7/ Xong quay lại trình duyệt dán đoạn địa chỉ đó vô cái hộp thoại, rồi điền thêm "\greeting.html" (bỏ ngoặc kép), rồi nhấn OK/Save/Lưu.. gì đó để thiết lập thôi
+
+8/ Khởi động lại trình duyệt để xem.
 
 
 Còn vẫn không biết nữa thì đm bạn :3
