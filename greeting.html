@@ -50,6 +50,11 @@
             50% {opacity: 0;}
             100% {opacity: 1;}
         }
+         @keyframes inputSearch {
+            0% {opacity: 0;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
     </style> <!--  changed at 19:55 04-Aug-2022 (U) -->
     
 </head>
@@ -60,8 +65,8 @@
             <li><a href="https://wwww.messenger.com">Messenger</a></li>
             <li><a href="https://www.facebook.com">Facebook</a></li>
             <li><a href="https://www.youtube.com">Youtube</a></li>
-            <li><a href="https://github.com/TrHgTung/poke-homePage-for-browser">Check newer</a></li>
-            <li><a href="https://youtu.be/dQw4w9WgXcQ" class="active">P*rnHub</a></li>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://teams.microsoft.com" class="active">Microsoft Teams</a></li>
            
             
         </ul>
@@ -73,15 +78,13 @@
             <img src="images-msedge-startpage/moon.png" alt="" id="moon">
             <img src="images-msedge-startpage/mountains_behind.png" alt="" id="mountains_behind">
             <h3 id="text">Welcome back to <i>
-               <script src="images-msedge-startpage/js/auto-detect-browserName.JS">
-                    // outline
-                </script>
-               </i>!</h3>
+                <script src="images-msedge-startpage/js/auto-detect-browserName.JS"></script>
+            </i>!</h3>
             <script id="des">
                 let today = new Date();
                 let curHr = today.getHours();
                 let greetings;
-                var admin = "Admin";
+                var admin = "Tùng";
        
                 if (curHr > 6 && curHr < 11) {
                     greetings = "Good Morning, " + admin + "!";
@@ -93,11 +96,6 @@
                 else {
                     greetings = "Good Night, " + admin + "!";
                 }
-
-                /* if(true){
-                    greetings = "Hello World, Tùng!";
-                }*/
-        
                 document.write("<h2>" + greetings + "</h2>");
 
                 // disable right-mouse
@@ -113,6 +111,11 @@
                /* var WinNetwork = new ActiveXObject("WScript.Network");
                 console.log(WinNetwork.UserName); /* damn it! this shjt required ActiveX must be activated */
             </script>
+            <div>
+                <input id="text_input" placeholder=" Tìm kiếm với Google..">
+                <button id="link">Search..</button>
+                <script src="./images-msedge-startpage/js/googleSearcher.js"></script>
+            </div>
             <img src="images-msedge-startpage/mountains_front.png" alt="" id="mountains_front">    
             <img src="images-msedge-startpage/little-pkm.png" alt="Kanto Starters" id="little-pkm">
             <img src="images-msedge-startpage/little-starters-pkm.png" alt="Kanto Starters" id="little-starters-pkm">
