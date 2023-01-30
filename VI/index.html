@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" type="text/css" href="images-msedge-startpage/css-msedge-startpage/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images-msedge-startpage/favicon.png" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" onclick="funct()"><b>Truy cập nhanh đến</b></a>
+        <ul>
+            <li><a href="https://www.facebook.com"><b>Facebook</b></a></li>
+            <li><a href="https://www.youtube.com"><b>Youtube</b></a></li>
+            <li><a href="https://www.instagram.com/"><b>Instagram</b></a></li>
+            <li><a href="https://www.tiktok.com"><b>TikTok</b></a></li>
+            <li><a href="https://www.google.com" class="active"><b>Google</b></a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images-msedge-startpage/stars.png" alt="" id="stars">
+        <img src="images-msedge-startpage/moon.png" alt="" id="moon">
+        <img src="images-msedge-startpage/mountains_behind.png" alt="" id="mountains_behind">
+        <h3 id="text"><b>Chào mừng quay lại</b><i>
+                <script src="images-msedge-startpage/js/auto-detect-browserName.JS"></script>
+            </i>!</h3>
+        <script id="des">
+            let today = new Date();
+            let curHr = today.getHours();
+            let greetings;
+            var fun_end_line = "vui vẻ nhé!";
+            var work_end_line = "năng động nhé!";
+
+            if (curHr > 6 && curHr < 11) {
+                greetings = "Buổi sáng " + work_end_line;
+            } else if (curHr >= 11 && curHr < 18) {
+                greetings = "Buổi trưa " + fun_end_line;
+            } else if (curHr >= 18 && curHr < 22) {
+                greetings = "Buổi chiều " + work_end_line;
+            }
+            else {
+                greetings = "Đêm khuya " + fun_end_line;
+            }
+            document.write("<h2><b>" + greetings + "</b></h2>");
+
+            // disable right-mouse
+            window.oncontextmenu = function () {
+                alert("Phiên bản mới được cập nhật tại https://github.com/TrHgTung/poke-homePage-for-browser");
+                return false;
+            }
+
+            function funct() {
+                document.getElementsByClassName("logo").value = alert("Lucario là Pokémon được tìm kiếm nhiều nhất ở Rule34 ><");
+            }
+
+        </script>
+        <div>
+            <input id="text_input" placeholder=" Tìm kiếm với Google..">
+            <script src="./images-msedge-startpage/js/googleSearcher.js"></script>
+        </div>
+        <img src="images-msedge-startpage/mountains_front.png" alt="" id="mountains_front">
+        <img src="images-msedge-startpage/lucario.png" alt="" id="little-pkm">
+        <img src="images-msedge-startpage/little-starters-pkm.png" alt="Kanto Starters" id="little-starters-pkm">
+    </section>
+
+    <!--
+        Image Source & Attribution
+
+        Source : https://www.freepik.com
+
+        Star vector created by upklyak
+        Link : https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm#page=1&query=Scene&position=38
+    -->
+
+</body>
+
+</html>

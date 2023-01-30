@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" type="text/css" href="images-msedge-startpage/css-msedge-startpage/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images-msedge-startpage/favicon.png" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" onclick="funct()">Quick access to:</a>
+        <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com">TikTok</a></li>
+            <li><a href="https://www.google.com" class="active">Google</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images-msedge-startpage/stars.png" alt="" id="stars">
+        <img src="images-msedge-startpage/moon.png" alt="" id="moon">
+        <img src="images-msedge-startpage/mountains_behind.png" alt="" id="mountains_behind">
+        <h3 id="text">Welcome back to <i>
+                <script src="images-msedge-startpage/js/auto-detect-browserName.JS"></script>
+            </i>!</h3>
+        <script id="des">
+            let today = new Date();
+            let curHr = today.getHours();
+            let greetings;
+            var admin = "time to explore";
+
+            if (curHr > 6 && curHr < 11) {
+                greetings = "Good Morning, " + admin + "!";
+            } else if (curHr >= 11 && curHr < 18) {
+                greetings = "Good Afternoon, " + admin + "!";
+            } else if (curHr >= 18 && curHr < 22) {
+                greetings = "Good Evening, " + admin + "!";
+            }
+            else {
+                greetings = "Good Night, " + admin + "!";
+            }
+            document.write("<h2>" + greetings + "</h2>");
+
+            // disable right-mouse
+            window.oncontextmenu = function () {
+                alert("Check for the newer version in https://github.com/TrHgTung/poke-homePage-for-browser");
+                return false;
+            }
+
+            function funct() {
+                document.getElementsByClassName("logo").value = alert("You know what? Charmander, Charmeleon and Charizard are not drago :v ");
+            }
+
+        </script>
+        <div>
+            <input id="text_input" placeholder=" Search with Google..">
+            <script src="./images-msedge-startpage/js/googleSearcher.js"></script>
+        </div>
+        <img src="images-msedge-startpage/mountains_front.png" alt="" id="mountains_front">
+        <img src="images-msedge-startpage/lucario.png" alt="" id="little-pkm">
+        <img src="images-msedge-startpage/little-starters-pkm.png" alt="Kanto Starters" id="little-starters-pkm">
+    </section>
+
+    <!--
+        Image Source & Attribution
+
+        Source : https://www.freepik.com
+
+        Star vector created by upklyak
+        Link : https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm#page=1&query=Scene&position=38
+    -->
+
+</body>
+
+</html>

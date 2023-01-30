@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,1000&family=Prompt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(130deg, violet, blue);
+    color: #fff;
+
+    animation-name: acontent;
+    animation-duration: 0.5s;
+
+    text-shadow: -1px 1px #cacaca, -2px 2px #cacaca,
+        -3px 3px #cacaca,
+        -4px 4px #cacaca,
+        -5px 5px #cacaca,
+        -6px 6px #cacaca,
+        -7px 7px #cacaca,
+        -8px 8px #cacaca,
+        -9px 9px #cacaca,
+        -10px 10px #cacaca,
+        -11px 11px #cacaca,
+        -12px 12px #cacaca,
+        -20px 20px rgb(0, 0, 0, 0.2),
+    ;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Prompt', sans-serif;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#mountains_front {
+
+    position: absolute;
+    animation-name: mountains_front;
+    animation-duration: 2s;
+    filter: brightness(150%);
+}
+
+section img#mountains_behind {
+
+    /* changed at 19:58 04-Aug-2022 (L) */
+    position: absolute;
+    animation-name: mountains_behind;
+    animation-duration: 1.5s;
+    filter: blur(2.5px);
+    /* changed at 19:58 04-Aug-2022 (U) */
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+
+    /* changed at 19:58 04-Aug-2022 (L) */
+    position: absolute;
+    animation-name: moon;
+    animation-duration: 2s;
+
+    /* changed at 19:58 04-Aug-2022 (U) */
+
+}
+
+section img#little-starters-pkm {
+    position: absolute;
+    animation-name: little-starters-pkm;
+    animation-duration: 1s;
+    filter: brightness(80%);
+}
+
+section img#little-pkm {
+    position: absolute;
+    animation-name: little-starters-pkm;
+    animation-duration: 1s;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    z-index: 9;
+    animation-name: atext;
+    animation-duration: 1s;
+}
+
+ul li,
+a,
+script#des {
+    animation-name: atext;
+    animation-duration: 1.5s;
+}
+
+i {
+    position: relative;
+    color: #ebcb8b;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    z-index: 9;
+}
+
+h2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(120px);
+    animation-name: h2_decor;
+    animation-duration: 2.5s;
+}
+
+#text_input {
+    animation-name: inputSearch;
+    animation-duration: 2s;
+    position: absolute;
+    align: center;
+    margin: 0;
+    padding: 0 5px;
+    margin-top: -30px;
+    height: 34px;
+    font-size: 16px;
+    top: 30%;
+    right: 40%;
+    border: none;
+    width: 20rem;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+    text-align: left;
+    border-color: transparent;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+}
+
+@keyframes mountains_behind {
+    0% {
+        left: -200px;
+        top: 400px;
+    }
+
+    25% {
+        left: -125px;
+        top: 250px;
+        filter: brightness(0%);
+    }
+
+    50% {
+        left: 0;
+        top: 0px;
+        filter: blur(0px);
+        filter: brightness(20%);
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+        filter: blur(2.5px);
+        filter: brightness(100%);
+    }
+}
+
+@keyframes moon {
+    0% {
+        left: 0px;
+        top: -200px;
+        opacity: 0;
+    }
+
+    60% {
+        left: 0px;
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+    }
+}
+
+@keyframes mountains_front {
+    0% {
+        opacity: 0;
+        top: 20px;
+    }
+
+    80% {
+        opacity: 1;
+        top: 0px;
+        filter: brightness(100%);
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+        filter: brightness(150%);
+    }
+}
+
+@keyframes little-starters-pkm {
+
+    0%,
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(20%);
+    }
+}
+
+@keyframes atext {
+    0% {
+        opacity: 0;
+    }
+
+    /* 25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0; */
+    /* } */
+
+    75% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes acontent {
+
+    0%,
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes h2_decor {
+
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes inputSearch {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
